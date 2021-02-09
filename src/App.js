@@ -5,7 +5,8 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      Weather App
+      <h1> Weather App </h1>
+
       <footer>
         Coded by
         <a href="https://www.linkedin.com/in/robertsonmba" target="_blank">
@@ -13,7 +14,7 @@ export default function App() {
           Audrey Robertson{" "}
         </a>
         <br />
-        Open Sourced on{" "}
+        Open-sourced{" "}
         <a
           href="https://github.com/audreyr01/myreact-weatherapp"
           target="_blank"
