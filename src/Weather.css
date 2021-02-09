@@ -1,0 +1,98 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Border {
+  margin: 30px auto;
+  border: 1px solid #dadde1;
+  border-radius: 5%;
+  max-width: 450px;
+}
+
+.CurrentCity {
+  font-family: "EB Garamond", serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.description {
+  list-style: none;
+  font-size: 13px;
+  color: mediumslateblue;
+  position: relative;
+  top: -35px;
+  left: 10px;
+}
+
+.humidity {
+  position: relative;
+  left: 65px;
+}
+
+.wind {
+  position: relative;
+  left: -55px;
+}
+
+.Footer {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 14px;
+}
+
+.SearchEngine {
+  font-family: "EB Garamond", serif;
+  margin: 30px auto 10px auto;
+  line-height: 2;
+  font-size: 18px;
+  max-width: 380px;
+}
+
+.degrees {
+  font-size: 70px;
+  color: mediumslateblue;
+}
+
+.units {
+  font-size: 15px;
+  position: relative;
+  top: -38px;
+  left: -20px;
+}
+
+.TruFeel {
+  font-size: 14px;
+  position: relative;
+  top: -20px;
+  left: -34px;
+}
+
+.forecast {
+  font-size: 13px;
+  color: rgba(80, 80, 209, 0.712);
+  position: relative;
+  top: 15px;
+}
+
+.icon {
+  color: orange;
+}
+
+.TimeDate {
+  position: relative;
+  right: -155px;
+  color: blue;
+  font-size: 11px;
+}
+
+.WeatherIcon {
+  color: orange;
+  font-size: 100px;
+  position: relative;
+  top: -25px;
+}
+
+footer {
+  text-align: center;
+}
