@@ -8,23 +8,23 @@ export default function App() {
     <div className="container">
       <div className="Border">
         <div className="App">
-          <Weather />
+          <Weather defaultCity="Italy" />
         </div>
       </div>
       <footer>
-        Coded by
+        Coded by{" "}
         <a href="https://www.linkedin.com/in/robertsonmba" target="_blank">
           {" "}
           Audrey Robertson{" "}
         </a>
         <br />
+        Open-sourced:{" "}
         <a
           href="https://github.com/audreyr01/myreact-weatherapp"
           target="_blank"
         >
           GitHub{" "}
         </a>{" "}
-        Open-sourced
       </footer>
     </div>
   );
