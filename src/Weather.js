@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import FormatDate from "./FormatDate";
 import axios from "axios";
+
+import FormatDate from "./FormatDate";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [weatherData, setWeatherData] = useState({ ready: false });
+  let [weatherData, setweatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
-    setWeatherData({
+    setweatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
       city: response.data.main.name,
@@ -50,34 +50,31 @@ export default function Weather(props) {
           <FormatDate date={weatherData.date} />
         </div>
 
-        <h1> {props.defaultCity} </h1>
+        <h1> {weatherData.city} </h1>
 
-        <div className="WeatherIcon">{weatherData.icon}</div>
+        <div className="WeatherIcon">
+          <i className="icon">{weatherData.icon}</i>
+        </div>
 
         <ul>
           <div className="row">
-            <div className="col-4">
-              <div className="col-4 text-capitalize">
-                <span className="description">{weatherData.description}</span>
-              </div>
-
-              <span className="humidity description">
-                {" "}
-                Humidity: {weatherData.humidity}%
-              </span>
+            <div className="col-4 description text-capitalize">
+              {weatherData.description}
             </div>
 
-            <div className="col-4">
-              <span className="wind description">
-                Wind: {Math.round(weatherData.wind)}mph
-              </span>
+            <div className="col-4 humidity description">
+              Humidity: {weatherData.humidity}%
+            </div>
+
+            <div className="col-4 wind description">
+              Wind: {Math.round(weatherData.wind)} mph
             </div>
           </div>
         </ul>
 
         <div className="container">
           <div className="row">
-            <div className="col-6 Temperture">
+            <div className="col-6 temperature description">
               <span className="degrees">
                 {" "}
                 {Math.round(weatherData.temperature)}{" "}
@@ -112,15 +109,15 @@ export default function Weather(props) {
               <span className="forecast">
                 10:00 <i className="fas fa-cloud-sun-rain icon"></i> ↑60 ↓58
               </span>
-              <br />
             </div>
           </div>
         </div>
       </div>
     );
   } else {
-    const apiKey = "f082d16967881db977592af7768cccb0";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
+    const apiKey = "41abd775b8901ed20c768543cad4ede2";
+    let city = "New York";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
