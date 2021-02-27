@@ -16,6 +16,10 @@
   margin-bottom: 30px;
 }
 
+.weatherIcon {
+  margin-bottom: 35px;
+}
+
 .description {
   font-size: 13px;
   color: mediumslateblue;
