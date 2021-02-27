@@ -6,7 +6,7 @@ export default function FormatDate(props) {
 
   let minutes = props.date.getMinutes();
   if (minutes < 10) {
-    hours = `0${minutes}`;
+    minutes = `0${minutes}`;
   }
 
   let year = props.date.getFullYear();
