@@ -15,10 +15,9 @@ export default function App() {
         Coded by{" "}
         <a href="https://www.linkedin.com/in/robertsonmba" target="_blank">
           {" "}
-          Audrey Robertson{" "}
-        </a>
-        <br />
-        Open-sourced:{" "}
+          Audrey Robertson
+        </a>{" "}
+        | Open-sourced{" "}
         <a
           href="https://github.com/audreyr01/myreact-weatherapp"
           target="_blank"
