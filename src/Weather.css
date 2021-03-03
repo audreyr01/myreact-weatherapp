@@ -103,3 +103,7 @@ h1 {
 footer {
   text-align: center;
 }
+
+.WeatherForecast canvas {
+  font-size: 5px;
+}
