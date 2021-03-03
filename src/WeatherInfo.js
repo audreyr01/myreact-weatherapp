@@ -2,6 +2,7 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -43,21 +44,7 @@ export default function WeatherInfo(props) {
           </div>
 
           <div className="col-6">
-            <span className="forecast">
-              01:00 <i className="fas fa-cloud-sun-rain icon"></i> ↑55 ↓45
-            </span>
-            <br />
-            <span className="forecast">
-              04:00 <i className="fas fa-cloud-sun-rain icon"></i> ↑32 ↓22
-            </span>
-            <br />
-            <span className="forecast">
-              07:00 <i className="fas fa-cloud-sun-rain icon"></i> ↑71 ↓65
-            </span>
-            <br />
-            <span className="forecast">
-              10:00 <i className="fas fa-cloud-sun-rain icon"></i> ↑60 ↓58
-            </span>
+            <WeatherForecast />
           </div>
         </div>
       </div>
