@@ -75,17 +75,6 @@ h1 {
   left: -34px;
 }
 
-.forecast {
-  font-size: 13px;
-  color: rgba(80, 80, 209, 0.712);
-  position: relative;
-  top: 15px;
-}
-
-.icon {
-  color: orange;
-}
-
 .TimeDate {
   position: relative;
   right: -155px;
@@ -95,7 +84,7 @@ h1 {
 
 .WeatherIcon {
   color: orange;
-  font-size: 100px;
+  font-size: 10px;
   position: relative;
   top: -25px;
 }
@@ -104,6 +93,6 @@ footer {
   text-align: center;
 }
 
-.WeatherForecast canvas {
-  font-size: 5px;
+.forecastElements {
+  font-weight: 0px;
 }
