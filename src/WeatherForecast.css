@@ -1,6 +1,14 @@
+header {
+  margin-bottom: 0;
+  position: relative;
+  top: -15px;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
 .forecast {
   font-size: 13px;
   color: rgba(80, 80, 209, 0.712);
   position: relative;
-  top: 15px;
+  word-spacing: 8px;
 }
